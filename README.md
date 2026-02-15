@@ -1,17 +1,21 @@
 # Contact-Book
 
-A simple command-line Contact Book application built using Python.
-It allows users to add, search, view, and delete contacts.
-All contacts are stored in a JSON file, so data is saved even after the program closes.
+📌 Description
+
+A simple command-line Contact Manager built using Python.
+It allows users to add, search, update, delete, and view contacts.
+All contacts are stored in a JSON file for persistent storage.
 
 🚀 Features
 
-Add new contacts
+Add new contact
 
-Search existing contacts
+Search contact by name
 
-View all saved contacts
+Update existing contact
 
-Delete contacts
+Delete contact
 
-Persistent storage using JSON
+View all contacts
+
+Data saved in contacts.json
