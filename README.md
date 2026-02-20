@@ -1,21 +1,28 @@
-# Contact-Book
+# Contact-Book Web App
 
 📌 Description
 
-A simple command-line Contact Manager built using Python.
-It allows users to add, search, update, delete, and view contacts.
-All contacts are stored in a JSON file for persistent storage.
+A simple and user-friendly web-based Contact Manager built using Flask (Python).
+This application allows users to add, edit, delete, search, and manage contacts with persistent JSON storage.
 
 🚀 Features
 
-Add new contact
+Add new contacts
 
-Search contact by name
+Search contacts by name
 
-Update existing contact
+Edit existing contacts
 
-Delete contact
+Delete contacts
 
-View all contacts
+Input validation (numeric phone numbers only)
 
-Data saved in contacts.json
+Duplicate contact prevention
+
+Flash messages for user feedback
+
+Persistent storage using JSON
+
+Clean Bootstrap-based UI
+
+Custom CSS styling
