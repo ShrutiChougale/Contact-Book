@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="mb-4 text-center">Contact Manager</h2>
+
+<form method="GET" class="mb-3">
+    <input type="text" name="search" placeholder="Search by name" class="form-control">
+</form>
+
+<form action="/add" method="POST" class="row g-2 mb-4">
+    <div class="col-md-5">
+        <input type="text" name="name" placeholder="Enter Name" class="form-control" required>
+    </div>
+    <div class="col-md-5">
+        <input type="text" name="phone" placeholder="Enter Phone" class="form-control" required>
+    </div>
+    <div class="col-md-2">
+        <button class="btn btn-primary w-100">Add</button>
+    </div>
+</form>
+
+<table class="table table-bordered bg-white">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th width="200">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for name, phone in contacts.items() %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ phone }}</td>
+            <td>
+                <a href="/edit/{{ name }}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="/delete/{{ name }}" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
