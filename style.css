@@ -1,0 +1,20 @@
+body {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+.table th {
+    background-color: #667eea;
+    color: white;
+}
