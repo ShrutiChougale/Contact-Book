@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3 class="mb-4 text-center">Edit Contact</h3>
+
+<form method="POST">
+    <div class="mb-3">
+        <input type="text" value="{{ name }}" class="form-control" disabled>
+    </div>
+    <div class="mb-3">
+        <input type="text" name="phone" value="{{ phone }}" class="form-control" required>
+    </div>
+    <button class="btn btn-success w-100">Update</button>
+</form>
+
+{% endblock %}
